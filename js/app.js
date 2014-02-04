@@ -10,7 +10,7 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/default', {templateUrl: 'partials/default.html', controller: 'defaultCtrl'});
+  $routeProvider.when('/default', {templateUrl: 'partials/default.html', controller: 'defaultCtrl'}).
   when('/logout', {templateUrl: 'partials/logout.html', controller: 'logoutCtrl'}).
   when('/admin_home', {templateUrl: 'partials/admin_home.html', controller: 'adminHomeCtrl'}).
   when('/user_home', {templateUrl: 'partials/user_home.html', controller: 'userHomeCtrl'}).

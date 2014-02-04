@@ -10,6 +10,7 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/default', {templateUrl: 'partials/default.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/default', {templateUrl: 'partials/default.html', controller: 'defaultCtrl'});
+  $routeProvider.when('/logout', {templateUrl: 'partials/logout.html', controller: 'logoutCtrl'});
   $routeProvider.otherwise({redirectTo: '/default'});
 }]);

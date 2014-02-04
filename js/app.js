@@ -11,10 +11,10 @@ angular.module('myApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/default', {templateUrl: 'partials/default.html', controller: 'defaultCtrl'});
-  $routeProvider.when('/logout', {templateUrl: 'partials/logout.html', controller: 'logoutCtrl'});
-  $routeProvider.when('/admin_home', {templateUrl: 'partials/admin_home.html', controller: 'adminHomeCtrl'});
-  $routeProvider.when('/user_home', {templateUrl: 'partials/user_home.html', controller: 'userHomeCtrl'});
-  $routeProvider.when('/admin_users', {templateUrl: 'partials/admin_users.html', controller: 'adminUsersCtrl'});
-  $routeProvider.when('/users_quizzes', {templateUrl: 'partials/users_quizzes.html', controller: 'usersQuizzesCtrl'});
-  $routeProvider.otherwise({redirectTo: '/default'});
+  when('/logout', {templateUrl: 'partials/logout.html', controller: 'logoutCtrl'}).
+  when('/admin_home', {templateUrl: 'partials/admin_home.html', controller: 'adminHomeCtrl'}).
+  when('/user_home', {templateUrl: 'partials/user_home.html', controller: 'userHomeCtrl'}).
+  when('/admin_users', {templateUrl: 'partials/admin_users.html', controller: 'adminUsersCtrl'}).
+  when('/users_quizzes', {templateUrl: 'partials/users_quizzes.html', controller: 'usersQuizzesCtrl'}).
+  otherwise({redirectTo: '/default'});
 }]);
